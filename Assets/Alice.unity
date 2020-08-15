@@ -586,9 +586,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1293939372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b13165f0cd3bc6b4888f7128b3dd7f28, type: 3}
+  m_Script: {fileID: 11500000, guid: f3bc11a05a8a55a478d2e5f4e305586d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scenarioSO: {fileID: 11400000, guid: a311d5ca03ee7074ab9655242e08f71d, type: 2}
 --- !u!4 &1293939374
 Transform:
   m_ObjectHideFlags: 0
@@ -724,6 +725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747254219}
+  - component: {fileID: 1747254220}
   m_Layer: 0
   m_Name: GameDirector
   m_TagString: Untagged
@@ -745,6 +747,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1747254220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747254218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cb4ea1f92a65b4d949d84aeb688ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMessageViewer: {fileID: 2115248371}
 --- !u!1 &1917263770
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +959,7 @@ MonoBehaviour:
   charaTypes: 000000000100000003000000
   txtCharaType: {fileID: 673747330}
   tapIconObj: {fileID: 787615918}
+  branchs: 
 --- !u!4 &2115248372
 Transform:
   m_ObjectHideFlags: 0
