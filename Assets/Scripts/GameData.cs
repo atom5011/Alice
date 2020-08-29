@@ -8,6 +8,10 @@ public class GameData : MonoBehaviour
 {
     public static GameData instance;    // 自分自身（GameDataクラス）を代入する変数
 
+    public float BGM_Volume = 1.0f;    
+    public float SE_Volume = 1.0f;     
+    public bool Mute = false;
+
     public ScenarioSO scenarioSO;       // スクリプタブル・オブジェクトを代入する変数
 
     void Awake()
@@ -52,6 +56,8 @@ public class GameData : MonoBehaviour
 
             // 1行にまとめられている分岐の番号をカンマの位置で区切って、Selectを使い、文字列からint型に型変換して配列に入れる
             scenarioData.branchs = scenarioData.branchString.Split(',').Select(x => int.Parse(x)).ToArray();
+
+            scenarioData.branchMessages = scenarioData.branchMessageString.Split(',').ToArray();　　//分岐メッセージを配列にする
 
             // 1行にまとめられているメッセージ表示に合わせて表示するキャラの名前を半角スラッシュの位置で区切ってリストに入れる
             List<string> strList = scenarioData.displayCharaString.Split('/').ToList();

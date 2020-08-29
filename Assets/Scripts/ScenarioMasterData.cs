@@ -16,12 +16,16 @@ public class ScenarioMasterData
         public string charaNoString;
         public string branchString;
         public string displayCharaString;
+        public int backgroundImageNo;
+        public int bgmNo;
+        public string branchMessageString;
 
         //読み込んだDataを配列に置き換えて代入
         public string[] messages;
         public CHARA_NAME_TYPE[] charaTypes;
         public int[] branchs;
-        public Dictionary<int, CHARA_NAME_TYPE[]> displayCharas; 
+        public Dictionary<int, CHARA_NAME_TYPE[]> displayCharas;
+        public string[] branchMessages;
     }
 }
 
